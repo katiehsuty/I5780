@@ -138,7 +138,7 @@ function addMarkerHiro(){
 	myWrap.add (mesh);
 	//大同寶寶
 	//背景
-	var geometry2	= new THREE.PlaneGeometry(2,3,32)
+	var geometry2	= new THREE.PlaneGeometry(20,10,32)
 	var text2;
 	loader.crossOrigin='';
 	text2=loader.load('whiteHouse.png');
@@ -186,11 +186,11 @@ function animate() {
 
 	renderer.render (scene, camera);
 	// using SpriteText
-	 sprite.position.copy (smoothedRoot.position)
+	 sprite.position.copy (markerHiro.position)
 	 //console.log (sprite.position.x + ',' + sprite.position.y + ',' + sprite.position.z) 
 	 sprite.position.y += 1.5;
 	 sprite.position.z += 10.5;
-	 sprite.material.visible = markerRoot.visible;
+	 sprite.material.visible = markerHiro.visible;
 	 sprite.text = '我畢業了!!!!'
 	
 }
