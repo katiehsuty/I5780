@@ -138,7 +138,7 @@ function addMarkerHiro(){
 	myWrap.add (mesh);
 	//大同寶寶
 	//畢業照
-	var geometry3	= new THREE.PlaneGeometry(2,5,32)
+	var geometry3	= new THREE.PlaneGeometry(2,7,32)
 	var text3;
 	loader.crossOrigin='';
 	text3=loader.load('pic.png');
@@ -149,7 +149,7 @@ function addMarkerHiro(){
 	});
 	var mesh3	= new THREE.Mesh( geometry3, material3 );
 	mesh3.position.z = 0.5;
-	mesh3.position.y = 0.5;
+	mesh3.position.y = 1.5;
 	mesh3.position.x = 2;
 	myWrap.add (mesh3);
 	//畢業照
@@ -175,7 +175,7 @@ function addMarkerHiro(){
 	sprite=new T("Test"),{
 		align: Align.center,
 		font:'40px',
-		fillStyle:'white',
+		fillStyle:'black',
 		antialias: true
 	}
 	sprite.position.set(0,0,0);
