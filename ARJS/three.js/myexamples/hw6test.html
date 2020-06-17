@@ -133,12 +133,12 @@ function addMarkerHiro(){
 		side: THREE.DoubleSide
 	});
 	var mesh	= new THREE.Mesh( geometry, material );
-	mesh.position.z=0.5;
+	mesh.position.z = 0.5;
 	mesh.position.y	= 0.5;
 	myWrap.add (mesh);
 	//大同寶寶
 	//畢業照
-	var geometry3	= new THREE.PlaneGeometry(2,5,32)
+	var geometry3	= new THREE.PlaneGeometry(2,4,32)
 	var text3;
 	loader.crossOrigin='';
 	text3=loader.load('pic.png');
@@ -148,9 +148,9 @@ function addMarkerHiro(){
 		side: THREE.DoubleSide
 	});
 	var mesh3	= new THREE.Mesh( geometry3, material3 );
-	mesh3.position.z=-1;
-	mesh3.position.y	= 0.5;
-	mesh3.position.x	= 2.5;
+	mesh3.position.z = 0.5;
+	mesh3.position.y = 0.5;
+	mesh3.position.x = 2.5;
 	myWrap.add (mesh3);
 	//畢業照
 	//背景
@@ -205,7 +205,7 @@ function animate() {
 	 sprite.position.copy (markerHiro.position)
 	 //console.log (sprite.position.x + ',' + sprite.position.y + ',' + sprite.position.z) 
 	 sprite.position.y += 1.5;
-	 sprite.position.z += 10.5;
+	 sprite.position.z += 8;
 	 sprite.material.visible = markerHiro.visible;
 	 sprite.text = '我畢業了!!!!'
 	
